@@ -1,6 +1,6 @@
 server {
     listen                                      ${NGINX_PORT} ssl default_server;
-    # listen                                      [::]:${NGINX_PORT} ssl default_server;
+    listen                                      [::]:${NGINX_PORT} ssl default_server;
 
     ssl_certificate                             ${NGINX_TLS_CERTS_PATH};
     ssl_certificate_key                         ${NGINX_TLS_KEY_PATH};
