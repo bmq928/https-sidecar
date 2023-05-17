@@ -3,6 +3,7 @@ COPY ./default.conf.template /etc/nginx/templates/
 
 # default env
 ENV NGINX_PORT 4430
+ENV NGINX_MAX_BODY_SIZE 200M
 ENV NGINX_TLS_CERTS_PATH /vault/secrets/sidecar-tls.crt
 ENV NGINX_TLS_KEY_PATH /vault/secrets/sidecar-tls.key
 ENV NGINX_TLS_CA_PATH /vault/secrets/sidecar-ca.crt
